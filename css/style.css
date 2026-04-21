@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    background: #2d4057;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: #131b31;
+    text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background: #2d4057;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#fa9483, #fa9483);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+
+}
+h1 {
+    font-size: 270%;
+}
+h2 {
+    font-size: 200%;
+}
+section {
+    padding: 90px 15%;
+}
+
+.logo {
+    height: 50px;
+}
+
+#index {
+    background:  linear-gradient(#4343438b, #00000072), url('../images/index.jpg');
+    background-size:cover;
+      min-height: 100vh;
+}
+
+.index-info {
+margin-top: 25vh;
+text-align: center;
+}
+
+.index-info h1 {
+    font-size: 350%;
+    color: white;
+    border: 2px solid rgb(69, 69, 69);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2d4057a9
+}
+
+.link-index {
+    color: white;
+    text-decoration: underline #fa9483;
+    font-size: 20px;
+}
+
+.link-index:hover {
+    color: #f3deca;
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 3px solid #fa9483;
+    border-radius: 5px;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.loc {
+overflow: auto;
+border-bottom: 4px #f3deca dashed;
+margin-bottom: 10px;
+}
+
+
+.loc img {
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+}
+
+.row {
+overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0px 10px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-33 {
+    width: 33.3%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.contacte, .cform {
+   border: 2px solid #f3deca;
+   border-radius: 5px;
+   background-color: #f3deca8b;
+   padding: 5px 5%;
+   height: 325px;
+   margin-bottom: 15px;
+}
+
+.cform input, .cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 90px 10px;
+    }
+
+    navbar a {
+        display: none;
+    } 
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe {
+        height: 55vw;
+    }
+
+    [class^="col-"] {
+    width: 100% !important;
+}
+
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+
+
+table {
+    width: 100%;
+    margin: 25px 0;
+    border-collapse: collapse; 
+    border: 3px solid #2d4057; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+table th {
+    background-color: #2d4057;
+    color: white;
+    border: 2px solid #2d4057; 
+    padding: 12px;
+    text-align: center;
+}
+
+
+table td {
+    border: 2px solid #2d4057; 
+    padding: 10px;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: rgba(45, 64, 87, 0.1); 
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse; 
+    border: 3px solid #2d4057; 
+    background-color: white;
+}
+
+table th {
+    background-color: #2d4057; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #2d4057; 
+}
+
+table td {
+    padding: 12px;
+    border: 2px solid #2d4057; 
+    vertical-align: top;
+    color: #333;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.itinerariu-table {
+    margin: 40px auto;
+    width: 95%;
+    max-width: 1000px;
+    border-collapse: separate; 
+    border-spacing: 0;
+    background-color: white;
+    border: 2px solid #2d4057; 
+    border-radius: 15px;       
+          overflow: hidden;
+    
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.itinerariu-table th {
+    background-color: #2d4057;
+    color: white;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Stilul pentru celule */
+.itinerariu-table td {
+    padding: 15px;
+    border: 1px solid #2d4057;
+    text-align: center;
+    color: #444;
+    font-size: 1rem;
+}
+
+.itinerariu-table tr:hover {
+    background-color: #f3deca44;
+}
+
+
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+}
+
+.imn-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 20px auto;
+    max-width: 1000px;
+    border: 1px solid #f3deca;
+}
+
+
+.imn-img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #fa9483;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.vframe, audio {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.audio-box {
+    background-color: #f3deca8b;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.loc {
+    overflow: auto;
+    border-bottom: 3px #f3deca dashed;
+    margin-bottom: 10px;
+}
+
+.loc img {
+    height: 23vh;
+    width: 23vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.loc1 {
+    overflow: auto;
+    border-bottom: 3px #f3deca dashed;
+    margin-bottom: 10px;
+}
+
+
+.loc1 img {
+    height: 23vh;
+    width: 23vh;
+    object-fit: cover;
+    border-radius: 20%;
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* media trebue sa fie la sfirsitul fisierului */
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+  section {
+    padding: 90px 10px;
+  }
+
+  .index-info h1 {
+    font-size: 250%;
+  }
+
+  .vframe {
+    height: 55vw;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .more-info-hero {
+    padding: 22px;
+  }
+
+  [class^="col-"] {
+   width: 100% !important;
+}
+
+  navbar {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  navbar a {
+    display: none;
+    margin-right: 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  navbar.mobile a {
+    display: block;
+    text-align: center;
+  }
+
+  #hamburger {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+header {
+    background: #2d4057;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+    z-index: 1000; /* Această linie va ține mereu meniul deasupra pozelor */
+}

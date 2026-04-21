@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="../images/favicon.png">
+    <script src="../js/script.js"></script>
+    <title>Bălți - Gastronomie Națională</title>
+    <style>
+        /* Ajustări pentru slider să arate ca în swipe.html */
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background: #fdfdfd;
+        }
+        .slider {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .slider img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            display: block;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(45, 64, 87, 0.8);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .prev:hover, .next:hover { background: #131b31; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="../images/flag.jpg">
+        <navbar>
+            <a href="../index.html">Acasă</a>
+            <a href="../pages/despre.html">Despre</a>
+            <a href="../pages/exploreaza.html">Explorează</a>
+            <a href="../pages/contacte.html">Contacte</a>
+            <a href="../pages/Arenda.html">Arendă</a>
+            <a href="../pages/mincare.html">Mincarea naţională</a>
+            <a href="../pages/Imn.html">Imnul Național</a>
+        </navbar>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+    </header>
+
+    <main style="padding-top: 110px;">
+        <section class="centered">
+            <h1>Tezaurul Gastronomic al Moldovei</h1>
+            <p style="max-width: 800px; margin: 0 auto;">Bucătăria moldovenească este un amestec bogat de tradiții, gusturi și arome, reflectând istoria și ospitalitatea poporului nostru. De la mămăliga aurie până la vinurile premiate internațional, fiecare preparat spune o poveste.</p>
+        </section>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img id="slide" src="../images/mincare1.jpg" alt="Mâncare Moldovenească">
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+
+        <section style="padding: 20px;">
+            
+            <div class="loc">
+                
+                <h2>Mămăligă cu de toate</h2>
+                <p>Mămăliga este „pâinea” de aur a moldoveanului. Preparată din făină de porumb, apă și sare, ea se transformă într-un festin atunci când este însoțită de o <b>friptură de porc</b> la ceaun, <b>brânză de oaie</b> rasă, smântână grasă și, neapărat, <b>mujdei de usturoi</b>. În satele din jurul Bălțiului, mămăliga se taie tradițional cu o ață de bumbac.</p>
+            </div>
+
+            <div class="loc">
+             
+                <h2>Sărmăluțe Moldovenești</h2>
+                <p>Spre deosebire de alte regiuni, sărmăluțele noastre sunt renumite pentru dimensiunea lor mică (cât degetul mic). Se fac din amestec de carne de porc și vită, orez și legume, învelite fie în frunză de varză murată, fie în frunză de viță-de-vie. Secretul gustului stă în fierberea lor lentă în oale de lut, la cuptor, timp de câteva ore.</p>
+            </div>
+
+            <div class="loc">
+               
+                <h2>Zeama de pui cu tăiței</h2>
+                <p>Zeama este „elixirul” care vindecă orice oboseală. Este o ciorbă de pui de casă, acrită obligatoriu cu <b>borș acru</b> natural. Conține tăiței de casă subțiri, tăiați manual, și multe verdețuri, printre care leușteanul care îi dă aroma inconfundabilă. Se servește fierbinte, cu un ardei iute alături.</p>
+            </div>
+
+            <div class="loc">
+              
+                <h2>Plăcinte „Poale-n brâu” și Învârtite</h2>
+                <p>Plăcintele moldovenești sunt o artă. Cele mai populare umpluturi sunt brânza de vaci cu mărar, cartofii cu ceapă călită, varza și, pentru desert, dovleacul sau vișinele. Aluatul poate fi dospit sau foietaj (învârtită), dar întotdeauna copt până devine auriu și crocant.</p>
+            </div>
+
+            <div class="loc">
+                
+                <h2>Baba Neagră - Desertul Nordului</h2>
+                <p>Specifică zonei de nord a Moldovei, Baba Neagră este un desert misterios. Deși nu conține ciocolată, are o culoare neagră-maronie și o textură elastică, plină de bule de aer, obținută printr-o coacere foarte lungă (până la 6-8 ore). Este mândria gospodinelor de la noi.</p>
+            </div>
+
+            <div class="loc">
+                
+                <h2>Cultura Vinului</h2>
+                <p>Nu poți vorbi despre mâncarea din Moldova fără a menționa vinul. Fie că este un vin de casă (tulburel) sau un soi nobil ca Feteasca Regală sau Rara Neagră, acesta completează perfect orice masă. Moldova deține cele mai mari beciuri din lume, fiind o destinație de top pentru oenoturism.</p>
+            </div>
+            <div class="loc">
+               
+                <h2>Răcituri de cocoș (Piftie)</h2>
+                <p>Nicio masă de sărbătoare în nordul Moldovei nu este completă fără <b>răcituri</b>. Spre deosebire de alte piftii, cele moldovenești se fac tradițional din carne de cocoș de casă și picioare de porc, fierte la foc mic ore întregi până când zeama devine gelatinoasă în mod natural. Secretul unei porții reușite de răcituri constă în limpezimea supei și aroma intensă de usturoi pisat, care se adaugă la final. Se servesc reci, adesea decorate cu morcov fiert sau frunze de pătrunjel înghețate în interiorul peliculei.</p>
+            </div>
+
+            <div class="loc">
+            
+                <h2>Ghiveci Moldovenesc cu legume</h2>
+                <p>Ghiveciul este chintesența grădinilor noastre bogate. Este o mâncare de legume călite și înăbușite, care poate fi servită atât caldă, cât și rece. Conține de obicei vinete, ardei grași, roșii zemoase, ceapă și dovlecei, toate tăiate cubulețe și gătite până când aromele se întrepătrund perfect. În varianta de sărbătoare, se adaugă bucățele de carne de miel sau vițel. Este un preparat extrem de sănătos, plin de culori vii, care amintește de verile petrecute la bunici, fiind acompaniat cel mai bine de o felie groasă de pâine proaspătă de casă.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer style="background: #2d4057; color: white; text-align: center; padding: 25px; margin-top: 40px;">
+        <p><b>Poftă Bună la Bălți!</b></p>
+           <h2 ><span>©Ceban Vladimir</span></h2>
+    </footer>
+
+    <<script>
+    // AICI scrii denumirile pozelor tale care se află în folderul images
+    let images = [
+        "../images/mincare1.jpg", 
+        "../images/mincare2.jpg",
+        "../images/mincare3.jpg",
+        "../images/mincare4.jpg",
+        "../images/mincare5.jpg",
+        "../images/mincare6.jpg",
+        "../images/mincare7.jpg"
+    ];
+
+    let index = 0;
+
+    // Această funcție schimbă poza pe ecran
+    function showSlide() {
+        const imgElement = document.getElementById("slide");
+        if (imgElement) {
+            imgElement.src = images[index];
+        }
+    }
+
+    function nextSlide() {
+        index = (index + 1) % images.length;
+        showSlide();
+    }
+
+    function prevSlide() {
+        index = (index - 1 + images.length) % images.length;
+        showSlide();
+    }
+
+    // Această parte face să meargă SWIPE-ul pe telefon
+    let startX = 0;
+    const slideImg = document.getElementById("slide");
+
+    if (slideImg) {
+        slideImg.addEventListener("touchstart", function(e) {
+            startX = e.touches[0].clientX;
+        });
+
+        slideImg.addEventListener("touchend", function(e) {
+            let endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) nextSlide(); // Degetul s-a mișcat la stânga
+            if (startX < endX - 50) prevSlide(); // Degetul s-a mișcat la dreapta
+        });
+    }
+</script>
+</body>
+</html>
